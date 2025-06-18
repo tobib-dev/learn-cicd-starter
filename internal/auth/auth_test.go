@@ -8,7 +8,7 @@ import (
 
 func TestGetA(t *testing.T) {
 	validHeader := http.Header{}
-	validHeader.Set("Authorization", "Bearer Q8rX2fA5vL9nTz3EwK1cYdU6oHbJmZpR")
+	validHeader.Set("Authorization", "ApiKey Q8rX2fA5vL9nTz3EwK1cYdU6oHbJmZpR")
 	validToken, _ := GetAPIKey(validHeader)
 
 	noAPIKey := http.Header{}
